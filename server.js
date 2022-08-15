@@ -78,7 +78,6 @@ function startPrompt() {
 
 //All corresponding functions
 
-
 function viewDepartment() {
     // select from the db
     const sql = `SELECT * FROM department`;
