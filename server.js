@@ -84,3 +84,17 @@ function viewDepartment() {
     });
     // show the result to the user (console.table)
   }
+
+
+
+  function viewRoles() {
+    // select from the db
+    const sql = "SELECT * FROM employee_role";
+    connection.query(sql, function(err, res) {
+      if (err) throw err;
+      console.table(res);
+      startPrompt();
+    });
+    // show the result to the user (console.table)
+  }
+  
