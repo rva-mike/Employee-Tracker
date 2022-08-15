@@ -12,16 +12,19 @@ const connection = mysql.createConnection({
 });
 
 
+//if connected, start inquirer prompts, else error
 connection.connect(err => {
     if (err) throw err;
-    console.log('****************');
-    console.log('Employee Manager');
-    console.log('****************');
+    console.log('                ');
+    console.log('Welcome to Employee Manager');
+    console.log('***************************');
 
     startPrompt()
 
 });
 
+
+//inquirer prompt start
 
 function startPrompt() {
     inquirer
@@ -72,7 +75,9 @@ function startPrompt() {
 }
 
 
-//functions from above
+
+//All corresponding functions
+
 
 function viewDepartment() {
     // select from the db
@@ -99,6 +104,7 @@ function viewRoles() {
 }
 
 
+
 function viewEmployees() {
     // select from the db
     const sql = "SELECT * FROM employee";
@@ -109,6 +115,7 @@ function viewEmployees() {
     });
     // show the result to the user (console.table)
 }
+
 
 
 function addDepartment() {
@@ -229,8 +236,12 @@ function updateEmployee() {
 }
 
 
-//Quit the application
+//Quits the application
 function quit() {
+    console.log("                          ")
+    console.log("Thanks for using. Goodbye");
+    console.log("**************************")
+
     connection.end();
     process.exit();
 }

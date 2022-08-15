@@ -21,6 +21,7 @@ VALUES ("Mike", "Levy", 1, 3),
  ("Jane", "Doe", 3, null),
  ("Bill", "Gates", 4, 3),
  ("Elon", "Musk", 5, null),
+
  ("Gary", "Edmond", 2, null),
  ("George", "Washington", 4, 7),
  ("Megan", "Adams", 1, 2)
