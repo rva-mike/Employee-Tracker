@@ -4,7 +4,11 @@
   # Employee Tracker
 
   ## Description
-   This is a command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL.
+   This is a command-line application to manage a company's employee database, using Node.js, Inquirer, MySQL, and console.table    
+   https://nodejs.org/en/
+   https://www.npmjs.com/package/inquirer
+   https://www.mysql.com/
+   https://www.npmjs.com/package/console.table.
 
   ## Table of Contents
   * [Description](#description)
@@ -19,7 +23,7 @@
   Git Clone this repository and type 'npm i' in the terminal to install the node packages. This application will be invoked with   'node server' in the terminal
 
   ## Usage
-  Data options from the 'employee' database are available to be viewed and able to be edited. 
+  Employee data is available to be viewed and edited. 
   
   ## Video-Walkthrough
   
