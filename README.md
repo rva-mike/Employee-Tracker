@@ -10,6 +10,8 @@
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Video-Walkthrough](#video-walkthrough)
+  * [Screenshot](#screenshot)
   * [License](#license)
   * [Questions](#questions)
 
@@ -18,6 +20,15 @@
 
   ## Usage
   Data options from the 'employee' database are available to be viewed and able to be edited. 
+  
+  ## Video-Walkthrough
+  
+  https://drive.google.com/file/d/15qeeeCRGdnWU4EVlLpb3YsqgOS4CwsAZ/view
+  
+  ## Screenshot
+
+![Screenshot (53)](https://user-images.githubusercontent.com/105617274/185286005-93cdf584-a24f-495c-8b3d-9f5e0f028f24.png)
+
 
   ## License
   MIT
