@@ -25,7 +25,7 @@
   * [Questions](#questions)
 
   ## Installation
-  Git Clone this repository, navigate into the root folder using the terminal and use the command 'npm i' to install the node packages. Then enter the command 'node server' in the terminal to start the application. 
+  Git Clone this repository, navigate into the root folder using the terminal, and use the command 'npm i' to install the node     packages. Then enter the command 'node server' in the terminal to start the application. 
 
   ## Usage
   Employee data is available to be viewed and edited. 
