@@ -125,8 +125,6 @@ function addDepartment() {
         name: "deptName"
 
     }).then(function (answer) {
-
-
         connection.query("INSERT INTO department (department_name) VALUES (?)", [answer.deptName], function (err, res) {
             if (err) throw err;
             console.table(res)
@@ -157,8 +155,6 @@ function addRole() {
             }
         ])
         .then(function (answer) {
-
-
             connection.query("INSERT INTO employee_role (title, salary, department_id) VALUES (?, ?, ?)", [answer.roleName, answer.salaryTotal, answer.deptID], function (err, res) {
                 if (err) throw err;
                 console.table(res);
@@ -194,8 +190,6 @@ function addEmployee() {
             }
         ])
         .then(function (answer) {
-
-
             connection.query("INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)", [answer.eeFirstName, answer.eeLastName, answer.roleID, answer.managerID], function (err, res) {
                 if (err) throw err;
                 console.table(res);
@@ -214,7 +208,6 @@ function updateEmployee() {
                 message: "Which employee would you like to update?",
                 name: "eeUpdate"
             },
-
             {
                 type: "input",
                 message: "What do you want to update to?",
@@ -222,10 +215,6 @@ function updateEmployee() {
             }
         ])
         .then(function (answer) {
-            // let sql = `INSERT INTO department (name) VALUES ("${answer.deptName}")`
-            //let sql = `'UPDATE employee SET role_id=${answer.updateRole} WHERE first_name= ${answer.eeUpdate}`;
-            //console.log(sql);
-
             connection.query('UPDATE employee SET role_id=? WHERE first_name= ?', [answer.updateRole, answer.eeUpdate], function (err, res) {
                 if (err) throw err;
                 console.table(res);
